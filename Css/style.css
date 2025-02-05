@@ -16,6 +16,30 @@ body{
     font-family: 'Courier New', Courier, monospace;
 }
 
+#titulo_bem_vindo{
+    background-color: aquamarine;
+    cursor: pointer;
+    text-align: center;
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 140px;
+    padding: 10px;
+    border-style: inset;
+    border-radius: 8px;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.modelo_conteudo{
+    width: 100%;
+    height: 600px;
+    background-color: rgb(191, 194, 197);
+    margin-top: 30px;
+    border-style: inset;
+    border-color: black;
+    border-radius: 6px;
+}
+
 .menu_opcoes{
     background-color: rgb(204, 211, 218);
     width: 400px;
@@ -57,4 +81,64 @@ body{
     border-style: inset;
     border-radius: 6px;
     border: none;
+}
+
+.conteudo{
+    width: 1000px;
+    height: 400px;
+    background-color: aliceblue;
+    text-align: justify;
+    padding: 10px;
+    margin-left: 640px;
+    position: relative;
+    top: 70px;
+    font-family: 'Courier New', Courier, monospace;
+    border-style: inset;
+    border-radius: 6px;
+    border-color: black;
+}
+
+.conteudo img{
+    width: 400px;
+    height: 420px;
+    position: absolute;
+    left: -460px;
+    top: -1px;
+}
+
+#proxima{
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+    border-style: inset;
+    border-color: black;
+    cursor: pointer;
+    float: right;
+    position: relative;
+    top: 120px;
+    left: -50px;
+}
+
+#anterior{
+    color: black;
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+    border-style: inset;
+    border-color: black;
+    cursor: pointer;
+    float: left;
+    position: relative;
+    top: 120px;
+    left: 50px;
+}
+
+
+.modelo_conteudo button:hover{
+    background-color: rgb(107, 107, 105);
+    color: rgb(255, 244, 240);
+}
+
+.modelo_conteudo button a{
+    text-decoration: none;
 }
