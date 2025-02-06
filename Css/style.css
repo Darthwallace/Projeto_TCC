@@ -131,6 +131,7 @@ body{
     position: relative;
     top: 120px;
     left: 50px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 
@@ -141,4 +142,75 @@ body{
 
 .modelo_conteudo button a{
     text-decoration: none;
+}
+
+#personagem{
+    left: -373px;
+    top: 60px;
+    width: 300px;
+    height: 300px;
+}
+
+#cont{
+    left: -220px;
+}
+
+.botoes_1 button{
+    width: 300px;
+    height: 50px;
+    border-radius: 7px;
+    margin-left: 20px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+
+.botoes_2 button{
+    width: 300px;
+    height: 50px;
+    border-radius: 7px;
+    margin-left: 20px;
+    position: relative;
+    left: 180px;
+    margin-top: 30px;
+    margin-bottom: 53px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+
+.botoes_3 button{
+    width: 300px;
+    height: 50px;
+    border-radius: 7px;
+    margin-left: 20px;
+    position: relative;
+    margin-top: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+
+#btn_7{
+    position: relative;
+    left: 330px;
+}
+
+#mostrar_mensagem{
+    width: 300px;
+    height: 300px;
+    background-color: aliceblue;
+    float: right;
+    position: relative;
+    border-radius: 6px;
+    border-style: inset;
+    border-color: black;
+    top: -290px;
+    left: -50px;
+    /* display: none; */
+}
+
+#mostrar_mensagem p{
+    text-align: justify;
+    padding: 20px;
+    font-size: 20px;
 }
