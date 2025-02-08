@@ -40,6 +40,30 @@ body{
     border-radius: 6px;
 }
 
+.menu{
+    background-color: #fff;
+    width: 500px;
+    height: -450px;
+    margin: 0 auto;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+}
+
+#inicio{
+    background-color: aquamarine;
+    cursor: pointer;
+    text-align: center;
+    width: 96%;
+    margin: 0 auto;
+    margin-top: 250px;
+    padding: 10px;
+    border-style: inset;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 .menu_opcoes{
     background-color: rgb(204, 211, 218);
     width: 400px;
@@ -47,27 +71,29 @@ body{
     margin: 0 auto;
     margin-top: 50px;
     padding: 10px;
+    position: relative;
+    top: -20px;
     border-style: inset;
-    border-radius: 8px;
-    border: none;
+    border-radius: 6px;
+    border-color: black;
 }
 
-.menu_opcoes p{
+.menu_opcoes button{
     background-color: cadetblue;
     width: 200px;
     padding: 7px;
-    margin: 0 auto;
     margin-top: 40px;
+    margin-left: 100px;
     border-style: inset;
-    border-radius: 8px;
+    border-radius: 6px;
+    border-color: black;
     text-align: center;
-    border: none;
     cursor: pointer;
     font-family: 'Courier New', Courier, monospace;
     font-size: 22px;
 }
 
-.menu_opcoes p:hover{
+.menu_opcoes button:hover{
     background-color: rgba(38, 69, 70, 0.836);
 }
 
