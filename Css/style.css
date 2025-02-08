@@ -214,3 +214,38 @@ body{
     padding: 20px;
     font-size: 20px;
 }
+
+#exemplo{
+    width: 800px;
+    height: 300px;
+    margin-left: 570px;
+    margin-top: 80px;
+}
+
+scroll-container{
+    display: block;
+    width: 975px;
+    height: 410px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    text-align: justify;
+    padding-right: 35px;
+}
+
+scroll-container p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.area{
+    background: black;
+    color: aliceblue;
+    padding: 15px;
+    font-size: 20px;
+    width: 500px;
+    margin-left: 220px;
+    border-radius: 6px;
+    border-style: double;
+    border-color: #fff;
+}
