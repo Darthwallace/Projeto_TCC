@@ -12,7 +12,7 @@ const sequencial = document.getElementById('sequencial');
 
 $(estrutura).mousemove(function(){
     $(mostrar).css('display','block');
-    mostrar.innerHTML = "<p> Conteúdos sobre estrutura de dados. Let's Go </p>"
+    mostrar.innerHTML = "<p> Conteúdos sobre estrutura de dados. </p>"
 });
     
 $(estrutura).mouseout(function(){
@@ -21,7 +21,7 @@ $(estrutura).mouseout(function(){
 
 $(atribuicao).mousemove(function(){
     $(mostrar).css('display','block');
-    mostrar.innerHTML = "<p> Conteúdos sobre estrutura de dados. Let's Go </p>"
+    mostrar.innerHTML = "<p> Consiste em armazenar um valor em uma variável usando o operador de atribuição (=). O valor pode ser fixo (ex: x = 10) ou proveniente de cálculos e entradas do usuário. Essa operação é essencial para manipular dados e controlar a lógica do programa. </p>"
 });
     
 $(atribuicao).mouseout(function(){
@@ -30,7 +30,7 @@ $(atribuicao).mouseout(function(){
 
 $(operacoes).mousemove(function(){
     $(mostrar).css('display','block');
-    mostrar.innerHTML = "<p> Conteúdos sobre estrutura de dados. Let's Go </p>"
+    mostrar.innerHTML = "<p> Realiza cálculos em um programa, utilizando operadores como adição (+), subtração (-), multiplicação (*), divisão (/) e outros. Também incluem operações avançadas, como exponenciação (**) e módulo (%). São fundamentais para processar e manipular dados numéricos em algoritmos. </p>"
 });
     
 $(operacoes).mouseout(function(){
@@ -39,7 +39,7 @@ $(operacoes).mouseout(function(){
 
 $(interatividade).mousemove(function(){
     $(mostrar).css('display','block');
-    mostrar.innerHTML = "<p> Conteúdos sobre estrutura de dados. Let's Go </p>"
+    mostrar.innerHTML = "<p> Permite a entrada e saída de dados em um programa, tornando-o dinâmico. Isso é feito com comandos como input() para receber informações e print() para exibi-las. Essa comunicação é essencial para criar aplicações interativas e personalizadas. </p>"
 });
     
 $(interatividade).mouseout(function(){
@@ -48,7 +48,7 @@ $(interatividade).mouseout(function(){
 
 $(contatenacao).mousemove(function(){
     $(mostrar).css('display','block');
-    mostrar.innerHTML = "<p> Conteúdos sobre estrutura de dados. Let's Go </p>"
+    mostrar.innerHTML = "<p> É a operação de unir textos em uma única sequência, utilizando o operador + ou funções específicas. Por exemplo, em Python: 'Olá, '  + 'mundo!' resulta em 'Olá, mundo!.' Essa técnica é útil para formatar mensagens e manipular textos dinamicamente. </p>"
 });
     
 $(contatenacao).mouseout(function(){
@@ -57,7 +57,7 @@ $(contatenacao).mouseout(function(){
 
 $(condicionais).mousemove(function(){
     $(mostrar).css('display','block');
-    mostrar.innerHTML = "<p> Conteúdos sobre estrutura de dados. Let's Go </p>"
+    mostrar.innerHTML = "<p> Permitem que um programa tome decisões com base em condições lógicas. Utilizam comandos como if, elif e else para executar diferentes blocos de código conforme a veracidade de uma expressão. São essenciais para controlar fluxos de execução e criar programas dinâmicos. </p>"
 });
     
 $(condicionais).mouseout(function(){
@@ -66,7 +66,7 @@ $(condicionais).mouseout(function(){
 
 $(btn_7).mousemove(function(){
     $(mostrar).css('display','block');
-    mostrar.innerHTML = "<p> Conteúdos sobre estrutura de dados. Let's Go </p>"
+    mostrar.innerHTML = "<p> Permitem a execução repetida de um bloco de código enquanto uma condição for verdadeira. Os principais tipos são o for (para repetições com um número definido de vezes) e o while (para repetições baseadas em uma condição). Elas são essenciais para automatizar tarefas e processar grandes quantidades de dados. </p>"
 });
     
 $(btn_7).mouseout(function(){
@@ -75,7 +75,7 @@ $(btn_7).mouseout(function(){
 
 $(dados).mousemove(function(){
     $(mostrar).css('display','block');
-    mostrar.innerHTML = "<p> Conteúdos sobre estrutura de dados. Let's Go </p>"
+    mostrar.innerHTML = "<p> Definem o tipo de valor que uma variável pode armazenar, como números, textos ou valores lógicos. Exemplos comuns incluem inteiros (int), reais (float), textos (string) e booleanos (bool). Eles são essenciais para a correta manipulação e processamento das informações em um programa. </p>"
 });
     
 $(dados).mouseout(function(){
@@ -84,7 +84,7 @@ $(dados).mouseout(function(){
 
 $(variavel).mousemove(function(){
     $(mostrar).css('display','block');
-    mostrar.innerHTML = "<p> Conteúdos sobre estrutura de dados. Let's Go </p>"
+    mostrar.innerHTML = "<p> são espaços na memória do computador usados para armazenar dados que podem ser alterados durante a execução do programa. Elas possuem um nome, um tipo de dado e um valor atribuído. São fundamentais para manipulação e processamento de informações em qualquer linguagem de programação. </p>"
 });
     
 $(variavel).mouseout(function(){
@@ -93,7 +93,7 @@ $(variavel).mouseout(function(){
 
 $(sequencial).mousemove(function(){
     $(mostrar).css('display','block');
-    mostrar.innerHTML = "<p> Conteúdos sobre estrutura de dados. Let's Go </p>"
+    mostrar.innerHTML = "<p> Executa comandos de forma linear, seguindo a ordem em que foram escritos, sem desvios ou repetições. É usada para operações diretas, como cálculos e exibição de mensagens. É a base da programação, sendo essencial para o entendimento de lógica computacional. </p>"
 });
     
 $(sequencial).mouseout(function(){

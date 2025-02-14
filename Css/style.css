@@ -113,7 +113,6 @@ body{
     width: 1000px;
     height: 400px;
     background-color: aliceblue;
-    text-align: justify;
     padding: 10px;
     margin-left: 640px;
     position: relative;
@@ -130,6 +129,12 @@ body{
     position: absolute;
     left: -460px;
     top: -1px;
+}
+
+.conteudo p{
+    font-size: 20px;
+    text-align: justify;
+    padding-left: 15px;
 }
 
 #proxima{
@@ -271,4 +276,24 @@ scroll-container p{
     border-radius: 6px;
     border-style: double;
     border-color: #fff;
+}
+
+#let{
+    color: rgb(90, 90, 245);
+    display: inline-block;
+}
+
+#valor{
+    color: rgb(243, 74, 32);
+    display: inline-block;
+}
+
+#simbolo{
+    color: rgb(57, 243, 32);
+    display: inline-block;
+}
+
+#resultante{
+    color: rgb(203, 245, 17);
+    display: inline-block;
 }
