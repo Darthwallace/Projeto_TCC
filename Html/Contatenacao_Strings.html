@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <title> Concatenação de Strings </title>
+</head>
+<body>
+    <div class="menu_sobre">
+        <h1 id="titulo_bem_vindo"> Concatenação de Strings </h1>
+        <div class="modelo_conteudo">
+            <div class="conteudo">
+                <img src="../Img/Bem vindo.jpg">
+                <scroll-container>
+                    <p> É a operação de combinar duas ou mais strings em uma única string. Isso é útil para criar mensagens personalizadas, exibir informações formatadas ou construir conteúdo dinâmico em um programa.</p>
+                    <p> Ela ocorre de forma direta, uma após a outra, sem nenhuma condição ou iteração envolvida. Cada concatenação de strings é uma instrução independente que é executada em ordem sequencial.</p>
+                    <div class="area">
+                        <code>
+                            <div id="comentario">//Concatenando Strings</div>
+                            <br>
+                            <br>
+                            <div id="let">let</div> novaString <div id="resultante">=</div> string1 + string2 + ...;
+                        </code>
+                    </div>
+                    <p style="display: inline-block;">Acima mostra uma criação de uma variável novaString recebe dois valores, <b>string1</b> e <b>string2</b>. Não é uma soma (mesmo utilizando o símbolo '<b>+</b>') mas sim uma concatenação desses dois valores dessas variáveis </p>
+                    <p style="display: inline-block;">Um exemplo prático sobre o escopo explicado acima pode ser representado da seguinte maneira:</p>
+                    <div class="area">
+                        <code>
+                            <div id="comentario">//Solicitando o nome</div>
+                            <br>
+                            <div id="let">let</div> nome <div id="resultante">=</div> <div id="string">"Wallace"</div> 
+                            <br>
+                            <br>
+                            <div id="comentario">//Solicitando a idade</div>
+                            <br>
+                            <div id="let">let</div> idade <div id="resultante">=</div> <div id="valor">26</div> 
+                            <br>
+                            <br>
+                            <div id="comentario">//Exibe o resultado apos a interatividade do usuário</div>
+                            <br>
+                            <div id="let">let</div> saudacao <div id="resultante">=</div> <div id="string">"Olá, "</div> + nome + <div id="string">"! Você tem "</div> + idade + <div id="string">" anos de idade."</div>;
+                            <div id="comentario">//Solicitando a idade</div>
+                            <br>
+                            <div id="console">Console</div>.<div id="log">log</div>(saudacao);
+                        </code>
+                    </div>
+                    <p style="display: inline-block;">Está sendo utilizada para criar uma mensagem de saudação personalizada com base no <b>nome</b> e na <b>idade</b>. A variável <b>saudacao</b> contém a mensagem concatenada, que é então exibida no <b>console</b>. Cada operação de concatenação ocorre em uma sequência ordenada de instruções e o resultado será: <b>Olá, João! Você tem 30 anos de idade</b>.</p>
+                    <br>    
+                </scroll-container>    
+            </div>
+            <button id="anterior"><a href="Conteudo.html">Anterior</a></button>
+            <button id="proxima"><a href=".">Vamor Praticar?</a></button>
+        </div>
+    </div>
+</body>
+</html>

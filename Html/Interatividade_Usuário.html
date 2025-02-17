@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <title> Interatividade com o usuário </title>
+</head>
+<body>
+    <div class="menu_sobre">
+        <h1 id="titulo_bem_vindo"> Interatividade com o usuário </h1>
+        <div class="modelo_conteudo">
+            <div class="conteudo">
+                <img src="../Img/Bem vindo.jpg">
+                <scroll-container>
+                    <p> É a capacidade de um programa de solicitar entrada do usuário e responder de acordo, seguindo uma sequência ordenada de instruções. Isso permite que o programa seja mais dinâmico e responsivo, pois pode se adaptar às entradas do usuário durante a execução.</p>
+                    <p> Geralmente ocorre de maneira sequencial, após outras instruções terem sido executadas. Isso significa que as solicitações de entrada do usuário e as ações correspondentes do programa são tratadas em uma ordem específica e previsível.</p>
+                    <div class="area">
+                        <code>
+                            <div id="comentario">//Saída de texto no console</div>
+                            <br>
+                            <br>
+                            <div id="let">let</div> entradaDoUsuario <div id="resultante">=</div> <div id="console">Prompt</div>(<div id="string">"mensagem de solicitação ao usuário"</div>);
+                        </code>
+                    </div>
+                    <p style="display: inline-block;"><b>'prompt()'</b> é uma função que exibe uma caixa de diálogo ao usuário com a mensagem especificada e permite que o usuário insira o valor.</p>
+                    <p style="display: inline-block;"><b>'entradaDoUsuario'</b> é a variável onde o valor inserido pelo usuário será armazenado.</p>
+                    <p style="display: inline-block;">Um exemplo prático sobre o escopo explicado acima pode ser representado da seguinte maneira:</p>
+                    <div class="area">
+                        <code>
+                            <div id="comentario">//Solicitando o nome</div>
+                            <br>
+                            <div id="let">let</div> nome <div id="resultante">=</div> <div id="console">Prompt</div>(<div id="string">"Qual o seu nome?"</div>); 
+                            <br>
+                            <br>
+                            <div id="comentario">//Solicitando a idade</div>
+                            <br>
+                            <div id="let">let</div> idade <div id="resultante">=</div> <div id="console">Prompt</div>(<div id="string">"Quantos anos voce tem?"</div>); 
+                            <br>
+                            <br>
+                            <div id="comentario">//Exibe o resultado apos a interatividade do usuário</div>
+                            <br>
+                            <div id="console">alert</div>(<div id="string">"Olá, "</div> + nome + <div id="string">"! Você tem "</div> + idade + <div id="string">" anos de idade."</div>);
+                        </code>
+                    </div>
+                    <p style="display: inline-block;">O programa solicita ao usuário seu nome e idade por meio de caixas de diálogo de entrada (<b>prompt()</b>), armazena as respostas em variáveis (<b>nome</b> e <b>idade</b>) e então exibe uma mensagem de saudação e informações sobre o usuário por meio de um alerta (<b>alert()</b>). Essas interações ocorrem em uma sequência ordenada de instruções e o resultado será:</p>
+                    <div class="area">
+                        <code>
+                            Qual é o seu nome? <div id="valor">Wallace</div>
+                            <br>
+                            Quantos anos você tem? <div id="valor">26</div>
+                            <br>
+                            Olá, <div id="valor">Wallace!</div> você tem <div id="valor">26</div> anos de idade;
+                        </code>
+                    </div>
+                    <br>    
+                </scroll-container>    
+            </div>
+            <button id="anterior"><a href="Conteudo.html">Anterior</a></button>
+            <button id="proxima"><a href=".">Vamor Praticar?</a></button>
+        </div>
+    </div>
+</body>
+</html>

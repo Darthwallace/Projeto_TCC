@@ -297,3 +297,23 @@ scroll-container p{
     color: rgb(203, 245, 17);
     display: inline-block;
 }
+
+#comentario{
+    color: #ffffff8e;
+    display: inline-block;
+}
+
+#console{
+    color: #a439ce;
+    display: inline-block;
+}
+
+#log{
+    color: #f16305;
+    display: inline-block;
+}
+
+#string{
+    color: rgb(13, 102, 13);
+    display: inline-block;
+}
