@@ -146,8 +146,8 @@ body{
     cursor: pointer;
     float: right;
     position: relative;
-    top: 120px;
     left: -50px;
+    top: -50px;
 }
 
 #anterior{
@@ -158,13 +158,37 @@ body{
     border-style: inset;
     border-color: black;
     cursor: pointer;
-    float: left;
     position: relative;
-    top: 120px;
+    top: -50px;
     left: 50px;
     font-family: 'Times New Roman', Times, serif;
 }
 
+#assunto{
+    color: black;
+    width: 150px;
+    height: 40px;
+    border-radius: 8px;
+    border-style: inset;
+    border-color: black;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    display: block;
+    margin:0 auto;
+    margin-top: 6px;
+    /* margin: 10px; */
+}
+.assuntos{
+    width: 168px;
+    padding: 3px;
+    border-style: inset;
+    border-radius: 6px;
+    border-color: black;
+    background-color: #fff;
+    left: 1677px;
+    top: -290px; 
+    position: relative;
+}
 
 .modelo_conteudo button:hover{
     background-color: rgb(107, 107, 105);

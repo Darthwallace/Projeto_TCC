@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <title> Alert() </title>
+</head>
+<body>
+    <div class="menu_sobre">
+        <h1 id="titulo_bem_vindo"> Alert() </h1>
+        <div class="modelo_conteudo">
+            <div class="conteudo">
+                <img src="../Img/Bem vindo.jpg">
+                <scroll-container>
+                    <p style="margin-right: 50px; display: inline-block;">Para visualizar a saída do console.log, basta abrir o console do navegador (<b>F12</b> ou <b>Ctrl+Shift+I</b> em muitos navegadores) e acessar a aba Console. Se estiver usando Node.js, a saída aparecerá diretamente no terminal.</p>
+                    <div class="area">
+                        <code>
+                            <div id="valor">alert</div>(<div id="string">"Olá, mundo"</div>)<div id="comentario">//Exibe uma caixa de alerta com a mensagem "Olá, mundo!"</div>
+                        </code>
+                    </div>
+                    <p style="margin-right: 50px; display: inline-block;">Outro exemplo, com uma variável:</p>
+                    <div class="area">
+                        <code>
+                            <div id="let">let</div> nome <div id="resultante">=</div> <div id="string">"Maria"</div>
+                            <br>
+                            <div id="valor">alert</div>(<div id="string">"Bem-vinda, "</div>+nome+<div id="string">"!"</div>)<div id="comentario">//Exibe "Bem-vinda, Maria!"</div>
+                        </code>
+                    </div>
+                    <p style="margin-right: 50px; display: inline-block;">Quando esse código é executado, uma janela pop-up aparece com a mensagem. Se precisar de alternativas menos intrusivas, você pode usar console.log() para depuração ou confirm() e prompt() para interações mais ricas.</p>
+                </scroll-container>    
+            </div>
+            <div class="assuntos">
+                <button id="assunto"><a href="Definicoes_Variaveis.html">Definicoes de Variaveis</a></button>
+                <button id="assunto"><a href="Console.log.html">Console.log()</a></button>
+                <button id="assunto"><a href="Alert.html">Alert()</a></button>
+            </div>
+            <button id="anterior"><a href="Conteudo.html">Anterior</a></button>
+            <button id="proxima"><a href=".">Vamor Praticar?</a></button>
+        </div>
+    </div>
+</body>
+</html>

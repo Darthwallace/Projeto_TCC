@@ -1,58 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <title> Estruturas Sequenciais </title>
+    <title> Definições de Variaveis </title>
 </head>
 <body>
     <div class="menu_sobre">
-        <h1 id="titulo_bem_vindo"> Estruturas Sequenciais </h1>
+        <h1 id="titulo_bem_vindo"> Definições de Variaveis </h1>
         <div class="modelo_conteudo">
             <div class="conteudo">
                 <img src="../Img/Bem vindo.jpg">
                 <scroll-container>
-                    <p style="margin-right: 50px; display: inline-block;">Instruções são executadas uma após a outra, em sequência. É a estrutura de programação mais básica e direta.</p>
-                    <p> É a exibição de mensagens, valores ou resultados no console do navegador ou no console do ambiente de execução JavaScript. Esta é uma técnica comum para depurar código, verificar valores de variáveis ou comunicar informações ao desenvolvedor ou usuário.</p>
-                    <p style="display: inline-block;"> É realizada utilizando a função <b>console.log()</b>, onde você passa os valores ou mensagens que deseja exibir entre parênteses. Esta função é parte do objeto console, que fornece uma variedade de métodos para saída de informações no console.</p>
+                    <p style="margin-right: 50px; display: inline-block;">Uma variável é um espaço na memória do computador usado para armazenar um valor. Esse valor pode ser alterado ao longo da execução do programa.</p>
                     <div class="area">
                         <code>
-                            <div id="comentario">//Saída de texto no console</div>
+                            <div id="comentario">//Declarando variáveis com let</div>
                             <br>
                             <br>
-                            <div id="console">Console</div>.<div id="log">log</div>(<div id="string">"Olá,mundo!"</div>);<div id="comentario">//Primeira instrução</div>
+                            <div id="let">let</div> nome <div id="resultante">=</div> <div id="string">"Wallace"</div>;
+                            <br>
+                            <div id="let">let</div> idade <div id="resultante">=</div> <div id="valor">26</div>;
+                            <br>
+                            <div id="let">let</div> altura <div id="resultante">=</div> <div id="valor">1.75</div>;
                             <br>
                             <br>
-                            <div id="console">Console</div>.<div id="log">log</div>(<div id="string">"Este é um exemplo de estrutura sequencial."</div>);<br> <div id="comentario">//Segunda instrução</div>
+                            <div id="comentario">//Exibindo os valores no console</div>
+                            <br>
+                            <br>
+                            <div id="console">Console</div>.<div id="log">log</div>(<div id="string">"Nome: "</div>, nome);
+                            <br>
+                            <div id="console">Console</div>.<div id="log">log</div>(<div id="string">"Idade: "</div>, idade);
+                            <br>
+                            <div id="console">Console</div>.<div id="log">log</div>(<div id="string">"Altura: "</div>, altura);
+                            <br>
                         </code>
                     </div>
-                    <p>No exemplo abaixo, vamos solicitar ao usuário que insira dois nomes e, em seguida, exibir esses nomes no console. Note que cada instrução é executada em sequência, ou seja, o programa pede o primeiro nome, depois o segundo e, por fim, exibe ambos.</p>
+                    <p>Aqui, nome, idade e altura são variáveis que armazenam diferentes tipos de dados.</p>
+                    <p style="display: inline-block;">No JavaScript, podemos declarar variáveis usando três palavras-chave principais: 
+                        <br>
+                        <br>
+                        <b>Var</b> = Forma antiga, evita-se usar hoje em dia;
+                        <br>
+                        <b>Let</b> = Recomendada para valores que podem mudar;
+                        <br>
+                        <b>Const</b> = Usada para valores que não podem ser alteradas.
+                    </p>
                     <div class="area">
                         <code>
-                            <div id="comentario">//Solicita o primeiro nome</div>
-                            <br>
-                            <div id="let">let</div> nome1 <div id="resultante">=</div> <div id="console">Prompt</div>(<div id="string">"Digite o primeiro nome:"</div>); 
+                            <div id="let">var</div> nome1 <div id="resultante">=</div> <div id="string"> "Pedro" </div> <div id="comentario">//Pode ser redeclarado (evitar usar)</div>
                             <br>
                             <br>
-                            <div id="comentario">//Solicita o segundo nome</div>
-                            <br>
-                            <div id="let">let</div> nome2 <div id="resultante">=</div> <div id="console">Prompt</div>(<div id="string">"Digite o segundo nome:"</div>); 
+                            <div id="let">let</div> nome2 <div id="resultante">=</div> <div id="string"> "Lucas" </div> <div id="comentario">//Pode mudar de valor</div>
                             <br>
                             <br>
-                            <div id="comentario">//Exibe os nomes no console</div>
+                            <div id="let">const</div> nome3 <div id="resultante">=</div> <div id="string"> "Lucas" </div> <div id="comentario">//Não pode ser alterado</div>
                             <br>
-                            <div id="console">Console</div>.<div id="log">log</div>(<div id="string">"O primeiro nome é: "</div> + nome1);
-                            <div id="console">Console</div>.<div id="log">log</div>(<div id="string">"O segundo nome é: "</div> + nome2);
+                            <br>
                         </code>
                     </div>
-                    <p style="display: inline-block;">O programa usa a função <b> Prompt() </b> para receber os nomes do usuario.</p>
-                    <p style="display: inline-block;">Cada nome é armazenado em uma variável ( <b>nome1</b> e <b>nome2</b> ) seguindo a ordem de execução.</p>
-                    <p style="display: inline-block;">Por fim, os nomes são exibidos no console com a função <b>console.log()</b>.</p>
-                    <br>
+                    <p><b>Dica</b>- Use let para valores que podem mudar e const para valores fixos.</p>
                 </scroll-container>    
+            </div>
+            <div class="assuntos">
+                <button id="assunto"><a href="Definicoes_Variaveis.html">Definicoes de Variaveis</a></button>
+                <button id="assunto"><a href="Console.log.html">Console.log()</a></button>
+                <button id="assunto"><a href="Alert.html">Alert()</a></button>
             </div>
             <button id="anterior"><a href="Conteudo.html">Anterior</a></button>
             <button id="proxima"><a href=".">Vamor Praticar?</a></button>
