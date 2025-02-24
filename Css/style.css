@@ -147,7 +147,7 @@ body{
     float: right;
     position: relative;
     left: -50px;
-    top: -50px;
+    top: 100px;
 }
 
 #anterior{
@@ -159,8 +159,8 @@ body{
     border-color: black;
     cursor: pointer;
     position: relative;
-    top: -50px;
     left: 50px;
+    top: 100px;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -168,26 +168,25 @@ body{
     color: black;
     width: 150px;
     height: 40px;
+    margin: 20px;
     border-radius: 8px;
     border-style: inset;
     border-color: black;
     cursor: pointer;
     font-family: 'Times New Roman', Times, serif;
-    display: block;
-    margin:0 auto;
-    margin-top: 6px;
-    /* margin: 10px; */
+    display: inline;
 }
 .assuntos{
-    width: 168px;
-    padding: 3px;
+    height: 300px;
+    padding: 30px;
     border-style: inset;
     border-radius: 6px;
     border-color: black;
     background-color: #fff;
-    left: 1677px;
-    top: -290px; 
+    display: inline;
     position: relative;
+    top: 84px;
+    left: 850px;
 }
 
 .modelo_conteudo button:hover{
@@ -263,7 +262,7 @@ body{
 
 #mostrar_mensagem p{
     text-align: justify;
-    padding: 20px;
+    padding: 10px;
     font-size: 20px;
 }
 
