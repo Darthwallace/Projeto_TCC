@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <title> Condicionais </title>
+</head>
+<body>
+    <div class="menu_sobre">
+        <h1 id="titulo_bem_vindo"> Else-If </h1>
+        <div class="modelo_conteudo">
+            <div class="conteudo">
+                <img src="../Img/Bem vindo.jpg">
+                <scroll-container>
+                    <p style="margin-right: 50px; display: inline-block;">Permite avaliar várias condições sequencialmente.</p>
+                    <p style="margin-right: 50px; display: inline-block;">É uma extensão do <b>if</b> e <b>else</b>, permitindo lidar com múltiplas condições de forma encadeada. Isso é útil quando há mais de duas possibilidades de resultado com base em diferentes condições.</p>
+                    <div class="area">
+                        <code>
+                            <div id="let">let</div> (condicao1) {
+                            <br>
+                            <br>
+                            <div id="comentario">// Bloco de codigo a ser executado se a condição1 for verdadeira </div>
+                            <br>
+                            <br>
+                            } <div id="let">else if</div> (condicao2) {
+                            <br>
+                            <br>
+                            <div id="comentario">// Bloco de codigo a ser executado se a condição2 for verdadeira </div>
+                            <br>
+                            <br>
+                            } <div id="let"> else </div> {
+                            <br>
+                            <br>
+                            <div id="comentario">// Bloco de codigo a ser executado se nenhuma das condições anterires for verdadeira </div>   
+                            <br>
+                            <br>
+                            }    
+                        </code>
+                    </div>
+                    <p style="margin-right: 50px; display: inline-block;"><b>'condicao1'</b>,<b>'condicao2'</b>, etc., são as expressões que serão avaliadas. Se a <b>primeira condição for verdadeira</b>, o bloco de código dentro do primeiro <b>'if'</b> será executado. Se não, e a <b>segunda condição for verdadeira</b>, o bloco de código dentro do <b>'else if'</b> correspondente será executado. Se <b>nenhuma das condições for verdadeira</b>, o bloco de código dentro do <b>'else'</b> será executado.</p>
+                    <p style="margin-right: 50px; display: inline-block;">O <b>'else if'</b> permite verificar várias condições em sequência, evitando aninhar vários blocos <b>'if-else'</b>, o que pode tornar o código mais legível.</p>
+                    <p style="margin-right: 50px; display: inline-block;">Um exemplo prático sobre o escopo explicado acima pode ser representado da seguinte maneira:</p>
+                    <div class="area">
+                        <code>
+                            <div id="let">let</div> nota <div id="resultante">=</div> <div id="valor"> 75</div>;
+                            <br>
+                            <br>
+                            <div id="let">if</div> (nota >= <div id="valor"> 90</div>) {
+                            <br>
+                            <div id="console" style="margin-left: 40px;">console</div>.<div id="log">log</div>(<div id="string">"Aprovado com conceito A"</div>);
+                            <br>
+                            } <div id="let"> else if </div>(nota >= <div id="valor">80</div>) {
+                            <br>
+                            <div id="console" style="margin-left: 40px;">console</div>.<div id="log">log</div>(<div id="string">"Aprovado com o conceito B"</div>);
+                            } <div id="let"> else if </div>(nota >= <div id="valor">70</div>) {
+                            <br>
+                            <div id="console" style="margin-left: 40px;">console</div>.<div id="log">log</div>(<div id="string">"Aprovado com o conceito B"</div>);
+                            } <div id="let"> else </div> {
+                            <br>
+                            <div id="console" style="margin-left: 40px;">console</div>.<div id="log">log</div>(<div id="string">"Reprovado"</div>); 
+                            <br>
+                            } 
+                        </code>
+                    </div>
+                    <br>
+                    <p style="margin-right: 50px; display: inline-block;">A nota do aluno é verificada em várias faixas, e uma mensagem é exibida com base no conceito correspondente. Se a nota for <b>maior ou igual a 90</b>, o aluno é <b>aprovado com conceito A</b>. Se não, mas for <b>maior ou igual a 80</b>, ele é <b>aprovado com conceito B</b>, e assim por diante. Se <b>nenhuma das condições for atendida</b>, o aluno é <b>reprovado</b>.</p>
+                </scroll-container>    
+            </div>
+            <div class="assuntos" style="left: 640px; padding-left: 19px; margin-left: 80px;">
+                <button id="assunto"><a href="Condicionais.html">If</a></button>
+                <button id="assunto"><a href="If-Else.html">If-Else</a></button>
+                <button id="assunto"><a href="Else-If.html">Else-If</a></button>
+                <button id="assunto"><a href="Switch-Case.html">Switch-Case</a></button>
+            </div>
+            <button id="anterior" style="left: -861px; top: 80px;"><a href="Conteudo.html">Anterior</a></button>
+            <button id="proxima"><a href=".">Vamor Praticar?</a></button>
+        </div>
+    </div>
+</body>
+</html>
