@@ -10,40 +10,41 @@
 </head>
 <body>
     <div class="menu_sobre">
-        <h1 id="titulo_bem_vindo"> For </h1>
+        <h1 id="titulo_bem_vindo"> While </h1>
         <div class="modelo_conteudo">
             <div class="conteudo">
                 <img src="../Img/Bem vindo.jpg">
                 <scroll-container>
-                    <p style="margin-right: 50px; display: inline-block;">Executa um bloco de código um número específico de vezes.</p>
-                    <p style="margin-right: 50px; display: inline-block;">O <b>"For"</b> é uma estrutura de controle de fluxo que permite executar um bloco de código repetidamente por um número específico de vezes. Ele consiste em três partes principais: inicialização, condição e expressão de incremento. O loop <b>"For"</b> é especialmente útil quando você sabe exatamente quantas vezes deseja executar o código.</p>
+                    <p style="margin-right: 50px; display: inline-block;">Executa um bloco de código enquanto uma condição especificada for verdadeira. A <b>condição</b> é verificada antes da execução do bloco.</p>
+                    <p style="margin-right: 50px; display: inline-block;">O <b>"While"</b> é uma estrutura de controle de fluxo que permite executar um bloco de código repetidamente enquanto uma condição especificada for verdadeira. Ele continua a executar o bloco de código enquanto a condição fornecida for verdadeira e é interrompido assim que a condição se torna falsa. O loop <b>"While"</b> é útil quando você não sabe exatamente quantas vezes deseja repetir o código, mas sabe a condição que deve ser atendida para continuar a execução.</p>
                     <div class="area">
                         <code>
-                            <div id="let">for</div> (inicializacao; condição; expressão de incremento) {
+                            <div id="let">while</div> (condição) {
                             <br>
                             <div id="comentario" style="margin-left: 30px;">// Bloco de código a ser repetido</div>    
                             <br>
                             }    
                         </code>
                     </div>
-                    <p style="margin-right: 50px; display: inline-block;">A <b>"inicialização"</b> é executada uma vez antes do início do loop e geralmente é usada para inicializar uma variável de controle</p>
                     <p style="margin-right: 50px; display: inline-block;">A <b>"condição"</b> é avaliada antes de cada iteração do loop. Se for verdadeira, o bloco de código é executado; caso contrário, o loop é encerrado.</p>
-                    <p style="margin-right: 50px; display: inline-block;">A <b>“expressão de incremento”</b> é executada após cada iteração do loop e geralmente é usada para incrementar ou atualizar a variável de controle.</p>
                     <p style="margin-right: 50px; display: inline-block;">Um exemplo prático sobre o escopo explicado acima pode ser representado da seguinte maneira:</p>
                     <div class="area">
                         <code>
-                            <div id="let">for</div> (<div id="let">let</div> i <div id="resultante">=</div> <div id="valor">1</div>; i <<div id="resultante">=</div> <div id="valor">5</div>; i++) {
+                            <div id="let">let</div> i <div id="resultante">=</div> <div id="valor">1</div>;
                             <br>
-                            <div id="console" style="margin-left: 50px;">console</div>.<div id="log">log</div>(i);
+                            <div id="let">while</div> (i <<div id="resultante">=</div> <div id="valor">5</div>) {
                             <br>
+                            <div id="console" style="margin-left: 45px;">console</div>.<div id="log">log</div>(i);
+                            <br>
+                            <div style="margin-left: 45px;">i++;</div>
                             }    
                         </code>
                     </div>
-                    <p style="display: inline-block;">A <b>"inicialização"</b> define a variável <b>"i"</b> como <b>1</b>.</p>
+                    <p style="display: inline-block;">A variável <b>"i"</b> é inicializada com o valor <b>1</b> fora do loop</p>
                     <br>
                     <p style="display: inline-block;">A <b>"condição"</b> verifica se <b>"i"</b> é menor ou igual a <b>5</b>.</p>
-                    <p style="display: inline-block;">A <b>"expressão de incremento"</b> incrementa <b>"i"</b> em 1 após cada iteração do loop.</p>
-                    <p style="display: inline-block; margin-right: 50px;">O bloco de código dentro do loop imprime o valor de "i" no console. O loop será executado enquanto "i" for menor ou igual a 5, portanto, os números de 1 a 5 serão impressos no console.</p>
+                    <p style="display: inline-block;">O bloco de código dentro do loop imprime o valor de <b>"i"</b> no console e, em seguida, incrementa <b>"i"</b> em <b>1</b> após cada iteração.</p>
+                    <p style="display: inline-block; margin-right: 50px;">O loop <b>"While"</b> continuará a ser executado enquanto <b>"i"</b> for <b>menor ou igual a 5</b>, portanto, os números de <b>1 a 5</b> serão impressos no console.</p>
                 </scroll-container>    
             </div>
             <div class="assuntos" style="left: 640px; padding-left: 19px; margin-left: 2px;">
