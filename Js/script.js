@@ -10,6 +10,7 @@ const dados = document.getElementById('dados');
 const variavel = document.getElementById('variavel');
 const sequencial = document.getElementById('sequencial');
 
+
 $(estrutura).mousemove(function(){
     $(mostrar).css('display','block');
     mostrar.innerHTML = "<p> Conteúdos sobre estrutura de dados. </p>"
@@ -99,3 +100,5 @@ $(sequencial).mousemove(function(){
 $(sequencial).mouseout(function(){
     $(mostrar).css('display','none');
 });
+
+

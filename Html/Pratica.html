@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/pratica.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <title>Pratica</title>
+</head>
+<body onload="positionBloco2(),positionBloco3(),posicaoBloco4(),positionBloco5(),positionBloco6()">
+    <h1 id="titulo">Prática - Estrutura de repetição</h1>
+    
+    <div class="modelo">
+        <div id="quadrado" class="quadrado"></div>
+        <div id="sombra"></div> 
+    </div>
+
+    <div class="meio">
+        <img src="../Img/Bem vindo.jpg">
+        <button id="envio" onclick="validar()"><p>Enviar</p></button> 
+        <div id="mensagem"></div>
+    </div>
+
+    <div class="container">
+        <div class="blocos">
+            <div id="bloco" class="blocao"><p> Dois </p></div> <!-- Ate 4 passo 1 faca -->
+            <div id="bloco2" class="blocao"><p> Um </p></div> <!-- Para i de 0 -->
+            <div id="bloco3" class="blocao" style="left: 150px;"><p> Tres </p></div> <!-- Escreva('Imprimindo') -->
+            <div id="bloco4" class="blocao"><p> Quatro </p></div> 
+            <div id="bloco5" class="blocao"><p> Cinco </p></div> 
+            <div id="bloco6" class="blocao" style="left: 150px; top: -399px;"><p> Seis </p></div> 
+            
+        </div>
+    </div>
+    
+    <div class="instrucoes">
+        <h2 id="enunciado">Instruções</h2>
+    </div>
+    
+    <button id="anterior"><a href="Conteudo.html">Anterior</a></button>
+    <script src="/Js/Repetição.js"></script>
+</body>
+</html>
