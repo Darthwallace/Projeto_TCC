@@ -138,30 +138,59 @@ body{
 }
 
 #proxima{
-    width: 100px;
-    height: 40px;
-    border-radius: 8px;
-    border-style: inset;
-    border-color: black;
+    background-color: blueviolet;
+    width: 130px;
+    height: 50px;
+    border-radius: 6px;
     cursor: pointer;
     float: right;
+    font-size: 17px;
     position: relative;
     left: -50px;
     top: 100px;
 }
 
-#anterior{
+#proxima p{
+    color: #fff;
+    padding: 20px;
+    position: relative;
+    top: -25px;
+}
+
+#proxima:hover{
+    background-color: yellow;
+}
+
+#proxima p:hover{
     color: black;
-    width: 100px;
-    height: 40px;
-    border-radius: 8px;
-    border-style: inset;
-    border-color: black;
+}
+
+#anterior{
+    background-color: blueviolet;
+    width: 130px;
+    height: 50px;
+    border-radius: 6px;
+    font-size: 17px;
     cursor: pointer;
     position: relative;
     left: 50px;
     top: 100px;
     font-family: 'Times New Roman', Times, serif;
+}
+
+#anterior p{
+    color: #fff;
+    padding: 20px;
+    position: relative;
+    top: -25px;
+}
+
+#anterior:hover{
+    background-color: yellow;
+}
+
+#anterior p:hover{
+    color: black;
 }
 
 #assunto{
@@ -172,10 +201,28 @@ body{
     border-radius: 8px;
     border-style: inset;
     border-color: black;
+    position: relative;
+    top: 15px;
     cursor: pointer;
     font-family: 'Times New Roman', Times, serif;
     display: inline;
+    background-color: blueviolet;
 }
+
+#assunto p{
+    color: #fff;
+    position: relative;
+    top: -15px;
+    left: -4px;
+    text-align: center;
+    font-size: 17px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
 .assuntos{
     height: 300px;
     padding: 30px;
@@ -185,9 +232,44 @@ body{
     background-color: #fff;
     display: inline;
     position: relative;
-    top: 84px;
+    top: 70px;
     left: 850px;
 }
+
+#assunto p:hover{
+    color: black;
+}
+
+#assunto:hover{
+    background-color: yellow;
+}
+
+
+/* .botoes_3 button{
+    
+    width: 300px;
+    height: 50px;
+    border-radius: 7px;
+    margin-left: 20px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+} */
+
+.botoes_3 p{
+    color: #fff;
+    position: relative;
+    top: -15px;
+    left: -4px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
 
 .modelo_conteudo button:hover{
     background-color: rgb(107, 107, 105);
@@ -210,6 +292,7 @@ body{
 }
 
 .botoes_1 button{
+    background-color: blueviolet;
     width: 300px;
     height: 50px;
     border-radius: 7px;
@@ -218,9 +301,31 @@ body{
     margin-bottom: 40px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
+}
+
+.botoes_1 button:hover{
+    background-color: yellow;
+    color: black;
+}
+
+.botoes_1 p{
+    color: #fff;
+    position: relative;
+    top: -15px;
+    left: -4px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.botoes_1 p:hover{
+    color: black;
 }
 
 .botoes_2 button{
+    background-color: blueviolet;
     width: 300px;
     height: 50px;
     border-radius: 7px;
@@ -231,7 +336,28 @@ body{
     font-size: 16px;
 }
 
+.botoes_2 p{
+    color: #fff;
+    position: relative;
+    top: -15px;
+    left: -4px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.botoes_2 p:hover{
+    color: black;
+}
+
+.botoes_2 button:hover{
+    background-color: yellow;
+}
+
 .botoes_3 button{
+    background-color: blueviolet;
     width: 300px;
     height: 50px;
     border-radius: 7px;
@@ -240,11 +366,32 @@ body{
     margin-bottom: 40px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
+}
+
+.botoes_3 p{
+    color: #fff;
+    position: relative;
+    top: -15px;
+    left: -4px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.botoes_3 p:hover{
+    color: black;
+}
+
+.botoes_3 button:hover{
+    background-color: yellow;
 }
 
 .botoes{
     position: relative;
     top: -20px;
+    
 }
 
 #mostrar_mensagem{

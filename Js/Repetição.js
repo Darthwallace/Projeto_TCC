@@ -160,6 +160,7 @@ function verificarColisao6_5(){
 }
 
 
+
 function mostrarMensagem(texto) {
     mensagem.textContent = texto;
     mensagem.style.display = 'block';
@@ -239,77 +240,103 @@ function handleClick2_3(){
 
 /* Evento quando conecta o bloco com outro para os elementos 4, 5 e 6 */
 
-function handleClick4_5(){
-    bloco5.removeEventListener('mousemove', handleClick5_4);
+function handleClick4(){
+    bloco5.removeEventListener('mousemove', handleClick5);
  
     if (verificarColisao4_5()) {
         bloco4.style.left = bloco5.offsetLeft + bloco5.offsetWidth + 'px';
         bloco4.style.top = bloco5.offsetTop + 'px';
      } else {
-        bloco5.addEventListener('mousemove', handleClick5_4);
+        bloco5.addEventListener('mousemove', handleClick5);
         mensagem.style.display = 'none';
     }
 }
 
 function handleClick4_6(){
-    bloco6.removeEventListener('mousemove', handleClick4_6);
+    bloco6.removeEventListener('mousemove', handleClick6);
     if (verificarColisao4_6()) {
         bloco4.style.left = bloco6.offsetLeft + bloco6.offsetWidth + 'px';
         bloco4.style.top = bloco6.offsetTop + 'px';
      } else {
-        bloco6.addEventListener('mousemove', handleClick4_6);
+        bloco6.addEventListener('mousemove', handleClick6);
         mensagem.style.display = 'none';
     }   
 }
 
-function handleClick5_4(){
-        bloco4.removeEventListener('mousemove', handleClick4_5);
+function handleClick5(){
+        bloco4.removeEventListener('mousemove', handleClick4);
         if (verificarColisao4_5()) {
             bloco5.style.left = bloco4.offsetLeft + bloco4.offsetWidth + 'px'
             bloco5.style.top = bloco4.offsetTop + 'px';
         } else {
-            bloco4.addEventListener('mousemove', handleClick4_5);
+            bloco4.addEventListener('mousemove', handleClick4);
             mensagem.style.display = 'none';
         }
 }
 
-/* Continuar nessa parte para estar parametrizando a questao das colisoes*/
-function handleClick6_4(){
-    bloco4_6.removeEventListener('mousemove', handleClick1_3);
+function handleClick6(){
+    bloco4_6.removeEventListener('mousemove', handleClick4_6);
 
-    if (verificarColisao2()) {
-        bloco3.style.left = bloco.offsetLeft + bloco.offsetWidth + 'px'
-        bloco3.style.top = bloco.offsetTop + 'px';
+    if (verificarColisao4_6()) {
+        bloco6.style.left = bloco4.offsetLeft + bloco4.offsetWidth + 'px'
+        bloco6.style.top = bloco4.offsetTop + 'px';
     } else {
-        bloco1_3.addEventListener('mousemove', handleClick1_3);
+        bloco4_6.addEventListener('mousemove', handleClick4_6);
         mensagem.style.display = 'none';
     }    
 }
 
-function handleClick3_2(){
-    bloco3.removeEventListener('mousemove', handleClick3);
 
-    if (verificarColisao3_2()) {
-        bloco2.style.left = bloco3.offsetLeft + bloco3.offsetWidth + 'px'
-        bloco2.style.top = bloco3.offsetTop + 'px';
+function handleClick6_5(){
+    bloco6.removeEventListener('mousemove', handleClick6);
+
+    if (verificarColisao6_5()) {
+        bloco5.style.left = bloco6.offsetLeft + bloco6.offsetWidth + 'px'
+        bloco5.style.top = bloco6.offsetTop + 'px';
     } else {
-        bloco3.addEventListener('mousemove', handleClick3);
+        bloco6.addEventListener('mousemove', handleClick6);
         mensagem.style.display = 'none';
     }    
 }
 
-function handleClick2_3(){
-    bloco2.removeEventListener('mousemove', handleClick2);
 
-    if (verificarColisao2_3()) {
-        bloco3.style.left = bloco2.offsetLeft + bloco2.offsetWidth + 'px'
-        bloco3.style.top = bloco2.offsetTop + 'px';
+function handleClick5_6(){
+    bloco5.removeEventListener('mousemove', handleClick5);
+
+    if (verificarColisao5_6()) {
+        bloco6.style.left = bloco5.offsetLeft + bloco5.offsetWidth + 'px';
+        bloco6.style.top = bloco5.offsetTop + 'px';
     } else {
-        bloco2.addEventListener('mouseout', handleClick2);
+        bloco5.addEventListener('mouseout', handleClick5);
         mensagem.style.display = 'none';
     }    
 }
 
+/* Verificar colisões dos bloco 1 para os blocos 4, 5 e 6*/
+
+function verificarColisao4_1(){
+    const retangulo4 = bloco4.getBoundingClientRect();
+    const retangulo1 = bloco.getBoundingClientRect();
+
+    return !(
+        retangulo4.right < retangulo1.left||
+        retangulo4.left > retangulo1.right||
+        retangulo4.bottom < retangulo1.top ||
+        retangulo4.top > retangulo1.bottom 
+    )
+}
+
+function handleClick4_1(){
+    bloco.removeEventListener('mousemove', handleClick1);
+
+    if (verificarColisao4_1()) {
+        bloco4.style.left = bloco.offsetLeft + bloco.offsetWidth + 'px';
+        bloco4.style.top = bloco.offsetTop + 'px';
+    } else {
+        bloco.addEventListener('mouseout', handleClick1);
+        mensagem.style.display = 'none';
+    }    
+}
 
 function validar(){
     var bloco1 = document.getElementById('bloco');
@@ -376,15 +403,27 @@ bloco6.addEventListener('mousedown' , (event)=>{
 })
 
 const bloco1_3 = document.querySelector('#bloco');
+const bloco4_1 = document.querySelector('#bloco');
 const bloco3_2 = document.querySelector('#bloco2');
 const bloco2_3 = document.querySelector('#bloco3');
 const bloco4_6 = document.querySelector('#bloco4');
+const bloco6_5 = document.querySelector('#bloco5');
+const bloco5_6 = document.querySelector('#bloco6');
+
 
 bloco1_3.addEventListener('mousemove', handleClick1_3);
+
+bloco4_1.addEventListener('mousemove', handleClick4_1);
 
 bloco3_2.addEventListener('mousemove', handleClick3_2);
 
 bloco2_3.addEventListener('mousemove', handleClick2_3);
+
+bloco4_6.addEventListener('mousemove', handleClick4_6);
+
+bloco6_5.addEventListener('mousemove', handleClick6_5);
+
+bloco5_6.addEventListener('mousemove', handleClick5_6);
 
 bloco.addEventListener('mousemove', handleClick1);
 
