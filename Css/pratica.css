@@ -86,8 +86,8 @@
     border-radius: 6px;
     border: none;
     position: relative;
-    margin-left: 30px;
-    margin-top: 40px;
+    left: 25px;
+    top: -420px;
     box-shadow: 1px 1px 5px black;
 }
 
@@ -204,7 +204,7 @@ h2{
 }
 
 #anterior{
-    background-color: blueviolet;
+    background-color: #142850;
     width: 130px;
     height: 50px;
     border-radius: 6px;
@@ -214,9 +214,8 @@ h2{
 }
 
 #anterior:hover{
-    background-color: yellow;
+    background-color: #f16305;
 }
-
 
 button p {
     text-decoration: none;
@@ -249,4 +248,56 @@ img{
 .blocos{
     left: 13px;
     position: relative;
+}
+
+#sombra{
+    width: 165px;
+    height: 60px;
+    background-color: rgb(109, 110, 110);
+    position: relative;
+    top: 95px;
+    left: 20px;
+}
+#sombra2{
+    width: 165px;
+    height: 60px;
+    background-color: rgb(109, 110, 110);
+    position: relative;
+    top: 175px;
+    left: 20px;
+}
+#sombra3{
+    width: 60px;
+    height: 200px;
+    background-color: rgb(109, 110, 110);
+    position: relative;
+    top: -25px;
+    left: 20px;
+}
+#sombra4{
+    width: 60px;
+    height: 200px;
+    background-color: rgb(109, 110, 110);
+    position: relative;
+    top: -225px;
+    left: 125px;
+}
+
+#imprimir{
+    padding: 20px;
+    margin-left: 45px;
+    margin-top: 40px;
+    margin-right: 45px;
+    border-radius: 6px;
+    background-color: aquamarine;
+    font-family: 'Times New Roman', Times, serif;
+    height: 200px;
+    display: none;
+}
+
+#imprimir p{
+    font-size: 17px;
+    text-align: center;
+    position: relative;
+    top: -30px;
 }

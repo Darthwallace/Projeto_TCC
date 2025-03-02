@@ -5,6 +5,7 @@ const bloco4 = document.querySelector('#bloco4');
 const bloco5 = document.querySelector('#bloco5');
 const bloco6 = document.querySelector('#bloco6');
 var mensagem = document.querySelector('#mensagem');
+var imprimir = document.querySelector('#imprimir');
 
 function moverBloco(elemento, event) {
     
@@ -342,31 +343,40 @@ function validar(){
     var bloco1 = document.getElementById('bloco');
     var bloco2 = document.getElementById('bloco2');
     var bloco3 = document.getElementById('bloco3');
-    // var bloco4 = document.getElementById('bloco4');
-    // var bloco5 = document.getElementById('bloco5');
-    // var bloco6 = document.getElementById('bloco6');
+  
 
     var posicao1 = bloco1.getBoundingClientRect();
     var posicao2 = bloco2.getBoundingClientRect();
     var posicao3 = bloco3.getBoundingClientRect();
-    // var posicao4 = bloco4.getBoundingClientRect();
-    // var posicao5 = bloco5.getBoundingClientRect();
-    // var posicao6 = bloco6.getBoundingClientRect();
+ 
 
     if (posicao2.right === posicao1.left && posicao1.right === posicao3.left){
-        $('#quadrado').animate({left:'130px'},{duration:800})
-        $('#quadrado').animate({top:"-280px"},{duration:800})
-        $('#quadrado').animate({left:"25px"},{duration:800})
-        $('#quadrado').animate({top:"-420px"},{duration:800})
         setTimeout(()=>{
+            $(imprimir).css('display','block');
+            imprimir.innerHTML = `<p> 
+                Imprimindo:
+                  <br>  
+                  Valor 1;
+                  <br>
+                  Valor 2;
+                  <br>
+                  Valor 3;
+                  <br>
+                  Valor 4;
+                  <br>
+                  Valor 5;
+                  <br>
+            </p>`
             var codigoDestacado = `
-                for (let i = 0; i < 4; i++) {
-                    moveForward(100);
-                    turnRight(90);
+                let i = 1; 
+                
+                while (i <= 5) { 
+                    console.log(i);     
+                    i++; 
                 }
             `
             alert(`A função utilizada para estar resolvendo esse problema em JavaScript é:\n ${codigoDestacado}`);   
-        },5000);
+        },1000);
         setTimeout(()=>{
             location.reload();
         },12000);
