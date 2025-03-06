@@ -85,7 +85,7 @@ $(dados).mouseout(function(){
 
 $(variavel).mousemove(function(){
     $(mostrar).css('display','block');
-    mostrar.innerHTML = "<p> são espaços na memória do computador usados para armazenar dados que podem ser alterados durante a execução do programa. Elas possuem um nome, um tipo de dado e um valor atribuído. São fundamentais para manipulação e processamento de informações em qualquer linguagem de programação. </p>"
+    mostrar.innerHTML = "<p> São espaços na memória do computador usados para armazenar dados que podem ser alterados durante a execução do programa. Elas possuem um nome, um tipo de dado e um valor atribuído. São fundamentais para manipulação e processamento de informações em qualquer linguagem de programação. </p>"
 });
     
 $(variavel).mouseout(function(){
