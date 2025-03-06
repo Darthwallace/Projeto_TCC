@@ -356,23 +356,17 @@ function validar(){
             imprimir.innerHTML = `<p> 
                 Imprimindo:
                   <br>  
-                  nome: Carlos;
-                  <br>
-                  idade: 30;
-                  <br>
-                  cidade: São Paulo;
+                  "Leve um guarda chuva"
                   <br>
             </p>`
             var codigoDestacado = `
-                const pessoa = {
-                    nome: "Carlos",
-                    idade: 30,
-                    cidade: "São Paulo"
-            };
+               let temSol = false;
 
-            for (let chave in pessoa) {
-            console.log('${chave}: ${pessoa[chave]}');
-}
+               if (temSol) {
+                  console.log("Leve um guarda-chuva! ☔");
+               } else {
+                  console.log("Aproveite o dia ensolarado! ☀️");
+               }
             `
             alert(`A função utilizada para estar resolvendo esse problema em JavaScript é:\n ${codigoDestacado}`);   
         },1000);

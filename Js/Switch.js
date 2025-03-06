@@ -356,23 +356,37 @@ function validar(){
             imprimir.innerHTML = `<p> 
                 Imprimindo:
                   <br>  
-                  nome: Carlos;
-                  <br>
-                  idade: 30;
-                  <br>
-                  cidade: São Paulo;
+                  Terça feira
                   <br>
             </p>`
             var codigoDestacado = `
-                const pessoa = {
-                    nome: "Carlos",
-                    idade: 30,
-                    cidade: "São Paulo"
-            };
+                let dia = 3; 
 
-            for (let chave in pessoa) {
-            console.log('${chave}: ${pessoa[chave]}');
-}
+                switch (dia) {
+                    case 1:
+                        console.log("Domingo");
+                        break;
+                    case 2:
+                        console.log("Segunda-feira");
+                        break;
+                    case 3:
+                        console.log("Terça-feira");
+                        break;
+                    case 4:
+                        console.log("Quarta-feira");
+                        break;
+                    case 5:
+                        console.log("Quinta-feira");
+                        break;
+                    case 6:
+                        console.log("Sexta-feira");
+                        break;
+                    case 7:
+                        console.log("Sábado");
+                        break;
+                    default:
+                        console.log("Dia inválido");
+                    }
             `
             alert(`A função utilizada para estar resolvendo esse problema em JavaScript é:\n ${codigoDestacado}`);   
         },1000);

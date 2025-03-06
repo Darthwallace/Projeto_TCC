@@ -356,23 +356,17 @@ function validar(){
             imprimir.innerHTML = `<p> 
                 Imprimindo:
                   <br>  
-                  nome: Carlos;
-                  <br>
-                  idade: 30;
-                  <br>
-                  cidade: São Paulo;
+                  Maior de idade
                   <br>
             </p>`
             var codigoDestacado = `
-                const pessoa = {
-                    nome: "Carlos",
-                    idade: 30,
-                    cidade: "São Paulo"
-            };
+                let idade = 18;
 
-            for (let chave in pessoa) {
-            console.log('${chave}: ${pessoa[chave]}');
-}
+                if (idade >= 18) {
+                    console.log("Maior de idade");
+                } else {
+                    console.log("Nao é maior de idade");
+                }
             `
             alert(`A função utilizada para estar resolvendo esse problema em JavaScript é:\n ${codigoDestacado}`);   
         },1000);

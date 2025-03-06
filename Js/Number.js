@@ -356,23 +356,16 @@ function validar(){
             imprimir.innerHTML = `<p> 
                 Imprimindo:
                   <br>  
-                  nome: Carlos;
-                  <br>
-                  idade: 30;
-                  <br>
-                  cidade: São Paulo;
+                  Soma = 13.5
                   <br>
             </p>`
             var codigoDestacado = `
-                const pessoa = {
-                    nome: "Carlos",
-                    idade: 30,
-                    cidade: "São Paulo"
-            };
+               
+                let num1 = 10;
+                let num2 = 3.5;
 
-            for (let chave in pessoa) {
-            console.log('${chave}: ${pessoa[chave]}');
-}
+                let soma = numero1 + numero2;
+                Console.log('Soma = ' + soma);
             `
             alert(`A função utilizada para estar resolvendo esse problema em JavaScript é:\n ${codigoDestacado}`);   
         },1000);

@@ -356,23 +356,20 @@ function validar(){
             imprimir.innerHTML = `<p> 
                 Imprimindo:
                   <br>  
-                  nome: Carlos;
-                  <br>
-                  idade: 30;
-                  <br>
-                  cidade: São Paulo;
+                  O numero é negativo
                   <br>
             </p>`
             var codigoDestacado = `
-                const pessoa = {
-                    nome: "Carlos",
-                    idade: 30,
-                    cidade: "São Paulo"
-            };
+                let numero = -5;
 
-            for (let chave in pessoa) {
-            console.log('${chave}: ${pessoa[chave]}');
-}
+                if (numero > 0) {
+                    console.log("O número é positivo. ✅");
+                } else if (numero < 0) {
+                    console.log("O número é negativo. ❌");
+                } else {
+                    console.log("O número é zero. ⚖️");
+                }
+
             `
             alert(`A função utilizada para estar resolvendo esse problema em JavaScript é:\n ${codigoDestacado}`);   
         },1000);
